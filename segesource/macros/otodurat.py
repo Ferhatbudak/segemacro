@@ -119,6 +119,8 @@ def is_icon_active(screen_img, top_left, w, h, name="Unknown"):
         # Analiz çıktısı (debug için)
         # print(f"[ANALIZ] {name} -> Sat: {mean_sat:.1f} | Val: {mean_val:.1f}")
         
+        if name == "m23.png":
+            return mean_val > 25
         if mean_sat > SATURATION_THRESHOLD and mean_val > VALUE_THRESHOLD:
             return True
         else:
@@ -176,8 +178,10 @@ class OtoDuratMacro:
             except: pass
 
     def _load_templates(self):
-        base_dir = "icons" 
-        names = ["kafa.png", "80cc.png", "durat1.png", "durat2.png"]
+        base_dir = "icons"
+        if not os.path.isdir(base_dir):
+            base_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "icons")
+        names = ["kafa.png", "80cc.png", "durat1.png", "durat2.png", "m23.png"]
         if not os.path.exists(base_dir): return
         
         for name in names:
@@ -272,7 +276,8 @@ class OtoDuratMacro:
                     res = cv2.matchTemplate(scr_bgr, tmpl, cv2.TM_CCOEFF_NORMED)
                     _, max_val, _, max_loc = cv2.minMaxLoc(res)
                     
-                    if max_val > 0.8:
+                    match_threshold = 0.65 if name == "m23.png" else 0.8
+                    if max_val > match_threshold:
                         h, w = tmpl.shape[:2]
                         
                         # Parlaklık/Doygunluk Kontrolü
@@ -377,7 +382,7 @@ class OtoDuratSettingsDialog(QDialog):
         target_box = QVBoxLayout(content_widget)
         
         self.checks = {}
-        icons = ["kafa.png", "80cc.png", "durat1.png", "durat2.png"]
+        icons = ["kafa.png", "80cc.png", "durat1.png", "durat2.png", "m23.png"]
         sel = self.config.get("selected_icons", {})
         
         for ic in icons:

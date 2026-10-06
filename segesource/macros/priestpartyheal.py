@@ -264,7 +264,8 @@ class PriestPartyHealMacro:
                 # Maskedeki en sağdaki beyaz pikselin X koordinatı / Genişlik = Oran
                 points = cv2.findNonZero(mask)
                 if points is not None:
-                    max_x = np.max(points[:,:,0])
+                    # OpenCV sürümüne göre findNonZero çıktısı Nx1x2 veya Nx2 olabilir.
+                    max_x = np.max(points[:, 0] if points.ndim == 2 else points[:, :, 0])
                     # Barın genişliğine oranla
                     ratio_width = max_x / float(sw)
                     ratio = ratio_width

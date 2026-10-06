@@ -131,6 +131,8 @@ class RestoreMacro:
 
     def _load_template(self):
         path = "icons/restore.png"
+        if not os.path.isfile(path):
+            path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "icons", "restore.png")
         if os.path.isfile(path):
             img = cv2.imread(path, cv2.IMREAD_COLOR)
             if img is not None:
@@ -205,11 +207,14 @@ class RestoreMacro:
                 pass
 
     def _perform_click_sequence(self, cx, cy):
-        """Garanti silme için çift tıklama sekansı."""
-        # 1. Tıklama
-        self._left_click_at(cx, cy, self.click_speed)
-        # 2. Tıklama
-        self._left_click_at(cx, cy, self.click_speed)
+        """Restore ikonunu sol tıkla iki kez dene."""
+        self._move_mouse(cx, cy)
+        for _ in range(2):
+            if self._mouse:
+                self._mouse.leftclick(self.click_speed, int(cx), int(cy))
+            else:
+                pyautogui.click(int(cx), int(cy), button='left')
+            time.sleep(self.click_speed)
 
     # ---------------------------------------------------------
     # TEK SEFERLİK MOD (SINGLE)

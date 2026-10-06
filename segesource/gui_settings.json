@@ -1,6 +1,598 @@
 {
-    "width": 1280,
-    "height": 850,
+    "hud_settings": {
+        "visible_macros": [
+            "priest_hpmp_heal",
+            "oto_kontrol",
+            "kurian_attack",
+            "priest_kalkan",
+            "upgrade_bot",
+            "macro_tasarimci",
+            "restore",
+            "priest_party_heal",
+            "mage_oto_tp",
+            "hpmp",
+            "ototiklama",
+            "oto_rpr",
+            "autodrop",
+            "clan_storage",
+            "vip_storage",
+            "priest_goat",
+            "farm",
+            "itemchange",
+            "self_macro_1",
+            "flood_plus",
+            "self_macro_2",
+            "priest_attack",
+            "self_macro_3",
+            "mage_remote_farm",
+            "narki",
+            "anti_afk",
+            "notification",
+            "priest_skiller",
+            "mage_pt_cekme",
+            "mage_text_tp",
+            "pet_macro",
+            "mage_staff",
+            "otodurat"
+        ]
+    },
+    "global": {
+        "target_process": "KnightOnLine.exe",
+        "filter_enabled": false,
+        "keyboard_id": 1,
+        "mouse_id": 12
+    },
+    "wari_seriskill": {
+        "key": "F",
+        "order": "2rr",
+        "z_enabled": false
+    },
+    "wari_des": {
+        "key": "G",
+        "fkey": "F2",
+        "combo_order": "3456"
+    },
+    "wari_kafa": {
+        "hotkey": "F11"
+    },
+    "wari_kalkan": {
+        "key": "F"
+    },
+    "wari_silme": {
+        "key": "F9",
+        "mode": "Mod 2"
+    },
+    "firfir": {
+        "hotkey": "CAPSLOCK",
+        "mode": "hold",
+        "direction": "Sol (A)",
+        "speed": 0.01,
+        "delay": 0.01
+    },
+    "crazydes": {
+        "hp_threshold": 30,
+        "des_f": 0,
+        "des_d": 1,
+        "hotkey_manual": "G",
+        "hp_active": false,
+        "manual_active": true
+    },
+    "asas": {
+        "hotkey": "Z",
+        "digits": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    },
+    "styx": {
+        "hotkey": "K",
+        "delay_skill": 0.05
+    },
+    "otobicak": {
+        "hotkey": "B",
+        "f_bar": 3,
+        "digit": 6
+    },
+    "threefive": {
+        "hotkey": "C",
+        "mode": "toggle",
+        "use_f_key": true,
+        "f_bar": 3,
+        "key5": 2,
+        "key3": 3,
+        "combo_delay": 0.4,
+        "w_delay": 0.05,
+        "use_z": false,
+        "z_delay": 0.1
+    },
+    "icemlr": {
+        "hotkey": "X",
+        "mode": "toggle"
+    },
+    "ok72": {
+        "hotkey": "N",
+        "digit": 3
+    },
+    "minor": {
+        "hotkey": "V",
+        "minor_count": 3
+    },
+    "m20": {
+        "hotkey": "M",
+        "f_bar": 3,
+        "digit": 4
+    },
+    "otocure": {
+        "hotkey": "C",
+        "f_bar": 3,
+        "digit": 5
+    },
+    "otodef": {
+        "hotkey": "A"
+    },
+    "oto_explore": {
+        "hotkey": "CAPS LOCK"
+    },
+    "birli": {
+        "hotkey": "T"
+    },
+    "hpmp": {
+        "hotkey": ",",
+        "hp_enabled": true,
+        "mp_enabled": true,
+        "hp_f_bar": 0,
+        "hp_digit": 1,
+        "mp_f_bar": 0,
+        "mp_digit": 8,
+        "hp_trigger": 0.89,
+        "mp_trigger": 0.9,
+        "hp_region": [
+            26,
+            32,
+            195,
+            35
+        ],
+        "mp_region": [
+            26,
+            32,
+            195,
+            35
+        ]
+    },
+    "otodurat": {
+        "key": "F12"
+    },
+    "itemchange": {
+        "hotkey": "G"
+    },
+    "self_macro_1": {
+        "hotkey": "F6",
+        "sequential": true
+    },
+    "self_macro_2": {
+        "hotkey": "F7",
+        "sequential": true
+    },
+    "self_macro_3": {
+        "hotkey": "F8",
+        "sequential": true
+    },
+    "oto_kontrol": {
+        "hotkey": "F10",
+        "threshold": 0.8
+    },
+    "ototiklama": {
+        "hotkey": "INSERT",
+        "threshold": 0.85,
+        "scan_region": null,
+        "items": {}
+    },
+    "macro_tasarimci": {
+        "name": "ÖZEL TASARIM",
+        "hotkey": "G",
+        "steps": []
+    },
+    "priest_goat": {
+        "attack_key": 2,
+        "hp_key": 1,
+        "mana_key": 3,
+        "kitap_key": 8,
+        "kol_key": 9,
+        "kitap_enabled": false,
+        "kol_enabled": false,
+        "kitap_delay": 180.0,
+        "kol_delay": 180.0,
+        "inv_coords": [
+            0,
+            0
+        ],
+        "inv_mode_open": false,
+        "mouse_return": false,
+        "other_skill_delay": 0.5,
+        "combo_mode": "2rr",
+        "r_speed": 0.02,
+        "skill_speed": 0.05
+    },
+    "priest_attack": {
+        "skill_key": 2,
+        "mode": "toggle",
+        "kitap_enabled": false,
+        "kitap_key": 8,
+        "kol_enabled": false,
+        "kol_key": 9
+    },
+    "priest_skiller": {
+        "skills": {}
+    },
+    "priest_kalkan": {
+        "key": "F",
+        "mode": "single"
+    },
+    "priest_hpmp_heal": {
+        "hp_enabled": true,
+        "mp_enabled": true,
+        "heal_enabled": false,
+        "hotkey": "H",
+        "hp_region": [
+            26,
+            32,
+            196,
+            35
+        ],
+        "hp_f_bar": 1,
+        "hp_digit": 1,
+        "hp_trigger": 0.8,
+        "mp_f_bar": 1,
+        "mp_digit": 2,
+        "mp_trigger": 0.4,
+        "heal_f_bar": 1,
+        "heal_digit": 1,
+        "heal_trigger": 0.9,
+        "heal_cooldown": 1.0
+    },
+    "priest_party_heal": {
+        "region": [
+            1631,
+            394,
+            165,
+            131
+        ],
+        "single_1920": {
+            "active": false,
+            "f": 1,
+            "d": 1,
+            "hp": 0.8,
+            "count": 1
+        },
+        "party_10k": {
+            "active": true,
+            "f": 1,
+            "d": 1,
+            "hp": 0.9,
+            "count": 1
+        },
+        "hotkey": "PAGE UP",
+        "party_restore": {
+            "active": false,
+            "f": 1,
+            "d": 8,
+            "hp": 0.8,
+            "count": 1
+        },
+        "single_10k": {
+            "active": false,
+            "f": 1,
+            "d": 1,
+            "hp": 0.8,
+            "count": 1
+        }
+    },
+    "mage_staff": {
+        "key": "Ş",
+        "mode": "toggle",
+        "skill_key": 2,
+        "order": "2rr",
+        "skill_bar": "F2",
+        "z_enabled": true,
+        "z_key_duration": 0.05,
+        "key_2_duration": 0.05,
+        "key_r_duration": 0.02
+    },
+    "restore": {
+        "key": ".",
+        "scan_mode": "toggle",
+        "speed": 0.1,
+        "click_speed": 0.05
+    },
+    "mage_remote_farm": {
+        "mob_image_path": null,
+        "mob_region": null,
+        "single_skills": [],
+        "area_skills": []
+    },
+    "mage_oto_tp": {
+        "active": true,
+        "f": 1,
+        "d": 1,
+        "hp": 0.4,
+        "mode": "single",
+        "hotkey": "PAGE UP",
+        "region": null
+    },
+    "mage_pt_cekme": {
+        "hotkey": "G",
+        "f": 1,
+        "d": 1,
+        "delay": 0.5,
+        "coords": []
+    },
+    "mage_text_tp": {
+        "region_chat": null,
+        "region_party": null,
+        "keywords": "44,tp",
+        "f": 1,
+        "d": 5
+    },
+    "kurian_attack": {
+        "key": "X",
+        "order": "2rr",
+        "mode": "toggle",
+        "z_enabled": false
+    },
+    "autodrop": {
+        "hotkey": "X",
+        "loot_center": [
+            960,
+            540
+        ],
+        "loot_area": null,
+        "loot_layout": "4'lü Dikey",
+        "loot_offset": 50,
+        "loop_delay": 15.0,
+        "click_delay": 0.15,
+        "path_loot": null,
+        "path_empty": null,
+        "confidence_loot": 0.85,
+        "scan_offset": 80
+    },
+    "oto_rpr": {
+        "equipped_pos": null,
+        "backup_slots": [],
+        "main_weapon_slot": null,
+        "rpr_f": 0,
+        "rpr_d": 0,
+        "check_interval": 5.0,
+        "only_hammer": false
+    },
+    "vip_storage": {
+        "hotkey": "F9",
+        "mode": "Otomatik",
+        "item_count": 5,
+        "trigger_slot": 28,
+        "timer_interval": 60,
+        "slot1_pos": [
+            0,
+            0
+        ],
+        "vip_btn_pos": [
+            0,
+            0
+        ]
+    },
+    "clan_storage": {
+        "hotkey": "F10",
+        "mode": "Süreli",
+        "item_count": 5,
+        "timer_value": 1,
+        "timer_unit": "Dakika",
+        "slot1_pos": [
+            0,
+            0
+        ],
+        "clan_tab_pos": [
+            0,
+            0
+        ],
+        "clan_btn_pos": [
+            0,
+            0
+        ],
+        "confirm_pos": [
+            0,
+            0
+        ],
+        "slot_spacing": 50
+    },
+    "anti_afk": {
+        "hotkey": "INSERT",
+        "mode": "Warrior (Seri)"
+    },
+    "farm": {
+        "mode": "Warrior (Seri)"
+    },
+    "pet_macro": {
+        "hotkey": "F9",
+        "hp_enabled": true,
+        "hp_alt_num": 1,
+        "hp_trigger": 0.5,
+        "mp_enabled": true,
+        "mp_alt_num": 2,
+        "mp_trigger": 0.3,
+        "feed_enabled": true,
+        "feed_type": 1,
+        "feed_trigger": 0.4,
+        "attack_enabled": false,
+        "z_duration": 0.05,
+        "alt2_duration": 0.05,
+        "attack_interval": 1.0,
+        "hp_region": null
+    },
+    "multi": {
+        "hotkey": "INSERT",
+        "keyboard_active": true,
+        "mouse_active": true
+    },
+    "background_bot": {
+        "hotkey": "INSERT",
+        "target_hwnds": [
+            853708
+        ],
+        "entries": [
+            {
+                "enabled": false,
+                "key": "1",
+                "delay": 1.0,
+                "unit": "ms"
+            },
+            {
+                "enabled": false,
+                "key": "1",
+                "delay": 1.0,
+                "unit": "ms"
+            },
+            {
+                "enabled": false,
+                "key": "1",
+                "delay": 1.0,
+                "unit": "ms"
+            },
+            {
+                "enabled": false,
+                "key": "1",
+                "delay": 1.0,
+                "unit": "ms"
+            },
+            {
+                "enabled": false,
+                "key": "1",
+                "delay": 1.0,
+                "unit": "ms"
+            },
+            {
+                "enabled": false,
+                "key": "1",
+                "delay": 1.0,
+                "unit": "ms"
+            },
+            {
+                "enabled": false,
+                "key": "1",
+                "delay": 1.0,
+                "unit": "ms"
+            },
+            {
+                "enabled": false,
+                "key": "1",
+                "delay": 1.0,
+                "unit": "ms"
+            },
+            {
+                "enabled": false,
+                "key": "1",
+                "delay": 1.0,
+                "unit": "ms"
+            },
+            {
+                "enabled": false,
+                "key": "1",
+                "delay": 1.0,
+                "unit": "ms"
+            }
+        ]
+    },
+    "upgrade_bot": {
+        "hotkey": "Ö",
+        "speed_click": 0.1,
+        "speed_process": 0.5,
+        "path_scroll": null,
+        "path_confirm": null,
+        "path_empty": "upgrade_data/path_empty.png",
+        "start_slot_pos": null,
+        "path_upgrade_btn": "upgrade_data/path_upgrade_btn.png",
+        "path_bus": "upgrade_data/path_bus.png",
+        "item_limit": 15,
+        "speed_multiplier": 0.5,
+        "path_confirm1": "upgrade_data/path_confirm1.png",
+        "path_confirm2": "upgrade_data/path_confirm2.png",
+        "anvil_pos": [
+            853,
+            470
+        ],
+        "slot_offset": [
+            -71,
+            85
+        ]
+    },
+    "narki": {
+        "hotkey": "F10",
+        "item_count": 1,
+        "speed_click": 0.1,
+        "start_stop_delay": 0.05,
+        "loop_delay": 0.5,
+        "npc_coords": [
+            0,
+            0
+        ],
+        "offset_stop": [
+            0,
+            30
+        ],
+        "offset_item1": [
+            0,
+            100
+        ]
+    },
+    "usko_otologin": {
+        "key": "F12",
+        "game_path": "C:\\NTTGame\\KnightOnlineEn\\KnightOnLine.exe",
+        "username": "",
+        "password": "",
+        "server_name": "FELIS",
+        "images_dir": "login_images"
+    },
+    "notification": {
+        "enabled_discord": false,
+        "discord_webhook_url": "",
+        "enabled_telegram": false,
+        "telegram_bot_token": "",
+        "telegram_chat_id": "",
+        "character_name": "",
+        "msg_death": "Press OK!",
+        "msg_dc": "Disconnected from Server!",
+        "msg_number_change": "Sayı değişti!",
+        "append_character_name": true,
+        "append_time": true,
+        "include_screenshot": false,
+        "images_dir": "notification_images",
+        "scan_interval_ms": 1000,
+        "match_threshold": 0.75,
+        "enable_death_watch": true,
+        "enable_dc_watch": true,
+        "enable_number_watch": false,
+        "number_region": null,
+        "number_ocr_lang": "eng",
+        "number_same_tolerance": 0
+    },
+    "flood_plus": {
+        "key": "CTRL",
+        "server_mode": "usko",
+        "speed_mode": "fixed",
+        "message_speed": 1.0,
+        "rand_min": 1.0,
+        "rand_max": 3.0,
+        "coord_all": [
+            0,
+            0
+        ],
+        "coord_shout": [
+            0,
+            0
+        ],
+        "messages": []
+    },
     "pages": [],
     "page_layouts": {
         "dashboard": [],
